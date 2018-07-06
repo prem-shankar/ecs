@@ -1,0 +1,359 @@
+
+<div class="w3-container">
+	<div class="row">
+
+		<form action="../submit" id="formentry" class="width:100%"
+			role="form" data-parsley-validate novalidate>
+			<div class="container-fluid shadow">
+				<!-- <div class="row">
+					<div id="valErr" class="row viewerror clearfix hidden">
+						<div class="alert alert-danger">Oops! Seems there are some
+							errors..</div>
+					</div>
+					<div id="valOk" class="row viewerror clearfix hidden">
+						<div class="alert alert-success">Yay! ..</div>
+					</div> -->
+
+
+					<div class="row">
+						<div class="col-md-12">
+							<div class="form-group brdbot" style="display: block;">
+								<h3>Patient Details</h3>
+								<div class="controls col-sm-9">
+
+									<p id="field1" data-default-label="Header"
+										data-default-is-header="true" data-control-type="header"></p>
+									<span id="errId1" class="error"></span>
+								</div>
+
+							</div>
+							<div class="row">
+								<div class="col-md-6">
+									<div class="form-group">
+										<label class="control-label control-label-left col-sm-3"
+											for="field2">Patient Name</label>
+										<div class="controls col-sm-9">
+
+											<input id="field2" type="text" class="form-control k-textbox"
+												data-role="text" placeholder="Please provide Patient Name"
+												required="required" data-parsley-errors-container="#errId2"><span
+												id="errId2" class="error"></span>
+										</div>
+
+									</div>
+									<div class="form-group">
+										<label class="control-label control-label-left col-sm-3"
+											for="field4">First Name<span class="req"> *</span></label>
+										<div class="controls col-sm-9">
+
+											<input id="field4" type="text" class="form-control k-textbox"
+												data-role="text" required="required"
+												data-parsley-errors-container="#errId3"><span
+												id="errId3" class="error"></span>
+										</div>
+
+									</div>
+									<div class="form-group">
+										<label class="control-label control-label-left col-sm-3"
+											for="field6">Middle Initial</label>
+										<div class="controls col-sm-9">
+
+											<input id="field6" type="text" class="form-control k-textbox"
+												data-role="text" data-parsley-errors-container="#errId4"><span
+												id="errId4" class="error"></span>
+										</div>
+
+									</div>
+									<div class="form-group">
+										<label class="control-label control-label-left col-sm-3"
+											for="field5">Last Name<span class="req"> *</span></label>
+										<div class="controls col-sm-9">
+
+											<input id="field5" type="text" class="form-control k-textbox"
+												data-role="text" required="required"
+												data-parsley-errors-container="#errId5"><span
+												id="errId5" class="error"></span>
+										</div>
+
+									</div>
+									<div class="form-group">
+										<label class="control-label control-label-left col-sm-3"
+											for="field7">Custom Links</label>
+										<div class="controls col-sm-9">
+
+											<input id="field7" type="text" class="form-control k-textbox"
+												data-role="text" data-parsley-errors-container="#errId6"><span
+												id="errId6" class="error"></span>
+										</div>
+
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="form-group">
+										<label class="control-label control-label-left col-sm-3"
+											for="field3">Date of Birth<span class="req"> *</span></label>
+										<div class="controls col-sm-9">
+
+											<input id="field7989" type="text" class="form-control k-textbox"
+												data-role="text" data-parsley-errors-container="#errId6"><span
+												id="errId6" class="error"></span>
+										</div>
+
+									</div>
+									<div class="form-group">
+										<label class="control-label control-label-left col-sm-3"
+											for="field8">Gender<span class="req"> *</span></label>
+										<div class="controls col-sm-9">
+
+											<select id="field8" class="form-control" data-role="select"
+												required="required" selected="selected"
+												data-parsley-errors-container="#errId8">
+												<option value=""></option>
+												<option value="Male">Male</option>
+												<option value="Female">Female</option>
+											</select><span id="errId8" class="error"></span>
+										</div>
+
+									</div>
+									<div class="form-group">
+										<label class="control-label control-label-left col-sm-3"
+											for="field15">Service Provider</label>
+										<div class="controls col-sm-9">
+
+											<input id="field15" type="text"
+												class="form-control k-textbox" data-role="text"
+												data-parsley-errors-container="#errId9"><span
+												id="errId9" class="error"></span>
+										</div>
+
+									</div>
+								</div>
+							</div>
+							<div class="form-group brdbot" style="display: block;">
+								<h3>Contact Information</h3>
+								<div class="controls col-sm-9">
+
+									<p id="field17" data-default-label="Header"
+										data-default-is-header="true" data-control-type="header"></p>
+									<span id="errId10" class="error"></span>
+								</div>
+
+							</div>
+							<div class="row" style="display: block;">
+								<div class="col-md-6">
+									<div class="form-group">
+										<label class="control-label control-label-left col-sm-3"
+											for="field18">Home Phone</label>
+										<div class="controls col-sm-9">
+
+											<input id="field18" type="text"
+												class="form-control k-textbox" data-role="text"
+												data-parsley-errors-container="#errId11"><span
+												id="errId11" class="error"></span>
+										</div>
+
+									</div>
+									<div class="form-group">
+										<label class="control-label control-label-left col-sm-3"
+											for="field20">email</label>
+										<div class="controls col-sm-9">
+
+											<input id="field20" type="text" class="form-control">
+										</div>
+
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="form-group">
+										<label class="control-label control-label-left col-sm-3"
+											for="field19">Mobile Phone</label>
+										<div class="controls col-sm-9">
+
+											<input id="field19" type="text"
+												class="form-control k-textbox" data-role="text"
+												data-parsley-errors-container="#errId13"><span
+												id="errId13" class="error"></span>
+										</div>
+
+									</div>
+								</div>
+							</div>
+							<div class="form-group brdbot">
+								<h3>Address Information</h3>
+								<div class="controls col-sm-9">
+
+									<p id="field21" data-default-label="Header"
+										data-default-is-header="true" data-control-type="header"></p>
+									<span id="errId14" class="error"></span>
+								</div>
+
+							</div>
+							<div class="row">
+								<div class="col-md-6">
+									<div class="form-group">
+										<label class="control-label control-label-left col-sm-3"
+											for="field23">Address</label>
+										<div class="controls col-sm-9">
+
+											<input id="field23" type="text"
+												class="form-control k-textbox" data-role="text"
+												data-parsley-errors-container="#errId15"><span
+												id="errId15" class="error"></span>
+										</div>
+
+									</div>
+									<div class="form-group" style="display: block;">
+										<label class="control-label control-label-left col-sm-3"
+											for="field24">City</label>
+										<div class="controls col-sm-9">
+
+											<input id="field24" type="text"
+												class="form-control k-textbox" data-role="text"
+												data-parsley-errors-container="#errId16"><span
+												id="errId16" class="error"></span>
+										</div>
+
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="form-group">
+										<label class="control-label control-label-left col-sm-3"
+											for="field25">State</label>
+										<div class="controls col-sm-9">
+											<select id="field25" class="form-control" >
+												<option value=""></option>
+												<option value="Option 1">TX</option>
+												<option value="Option 2">AZ</option>
+												<option value="Option 3">CO</option>
+												<option value="Option 4">FL</option>
+											</select><span id="errId17" class="error"></span>
+										</div>
+
+									</div>
+									<div class="form-group">
+										<label class="control-label control-label-left col-sm-3"
+											for="field31">ZIP</label>
+										<div class="controls col-sm-9">
+
+											<input id="field31" type="text"
+												class="form-control k-textbox" data-role="text"
+												data-parsley-errors-container="#errId18"><span
+												id="errId18" class="error"></span>
+										</div>
+
+									</div>
+								</div>
+							</div>
+							<div class="form-group brdbot">
+								<h3>Patient Fees</h3>
+								<div class="controls col-sm-9">
+
+									<p id="field33" data-default-label="Header"
+										data-default-is-header="true" data-control-type="header"></p>
+									<span id="errId19" class="error"></span>
+								</div>
+
+							</div>
+							<div class="row">
+								<div class="col-md-6">
+									<div class="form-group">
+										<label class="control-label control-label-left col-sm-3"
+											for="field34">PLC Letter Type</label>
+										<div class="controls col-sm-9">
+
+											<input id="field34" type="text"
+												class="form-control k-textbox" data-role="text"
+												data-parsley-errors-container="#errId20"><span
+												id="errId20" class="error"></span>
+										</div>
+
+									</div>
+									<div class="form-group">
+										<label class="control-label control-label-left col-sm-3"
+											for="field35">Facility Fee</label>
+										<div class="controls col-sm-9">
+
+											<input type="text" id="field35" class="form-control"><span
+												id="errId21" class="error"></span>
+										</div>
+
+									</div>
+									<div class="form-group">
+										<label class="control-label control-label-left col-sm-3"
+											for="field37">Initial Patient Fee</label>
+										<div class="controls col-sm-9">
+
+											<input type="text" id="errId22" class="form-control"><span
+												id="errId22" class="error"></span>
+										</div>
+
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="form-group">
+										<label class="control-label control-label-left col-sm-3"
+											for="field38">Anesthesia Fee</label>
+										<div class="controls col-sm-9">
+
+											<input type="text" id="errId23" class="form-control"><span
+												id="errId23" class="error"></span>
+										</div>
+
+									</div>
+									<div class="form-group">
+										<label class="control-label control-label-left col-sm-3"
+											for="field39">Professional Fee</label>
+										<div class="controls col-sm-9">
+
+											<input type="text" id="errId24" class="form-control"><span
+												id="errId24" class="error"></span>
+										</div>
+
+									</div>
+									<div class="form-group">
+										<label class="control-label control-label-left col-sm-3"
+											for="field40">DME Fee</label>
+										<div class="controls col-sm-9">
+
+											<input type="text" id="errId25" class="form-control"><span
+												id="errId25" class="error"></span>
+										</div>
+
+									</div>
+								</div>
+							</div>
+							<div class="form-group brdbot">
+								<h3>Patient Insurance Details</h3>
+								<div class="controls col-sm-9">
+
+									<p id="field41" data-default-label="Header"
+										data-default-is-header="true" data-control-type="header"></p>
+									<span id="errId26" class="error"></span>
+								</div>
+
+							</div>
+						</div>
+					</div>
+<!-- 					<div class="panel-group" id="accordion47" style="display: block;">
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h4 class="panel-title">
+									<a data-toggle="collapse" data-parent="#accordion47"
+										href="#accBody49" id="accHeading49" class="collapsed">Collapse</a>
+								</h4>
+							</div>
+							<div class="panel-collapse collapse" id="accBody49"
+								style="height: 0px;">
+								<div class="panel-body"></div>
+							</div>
+						</div>
+
+
+					</div> -->
+
+
+				<!-- </div> -->
+			</div>
+		</form>
+	</div>
+</div>

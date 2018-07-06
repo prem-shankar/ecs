@@ -1,0 +1,39 @@
+
+<div  *ngIf="patientListData">
+	<div >
+		<h3>Patient List </h3>
+	</div>
+	<hr/>
+	<span><i class="w3-medium fa fa-search"></i> Search : <input class="" type="text" [(ngModel)]='filterData'></span>
+
+	<div class="w3-panel w3-green" *ngIf="(patientListData | filter:filterData).length == 0">
+		<h3>Oh no</h3>
+		<p>No patients found <span *ngIf="filterData"> with search "{{filterData}}"</span> </p>
+	</div>
+	<button routerLink="/add" class="btn btn-primary"> Add New Patient</button>
+	<hr/>
+	<div class="container" *ngIf="(patientListData | filter:filterData | filter:filterData).length != 0">
+		<table class="table">
+			<tr>
+				<th><i class="w3-medium custom-icon fa fa-refresh"></i>Patient Id.</th>
+				<!-- <th>ID</th> -->
+				<th><i class="w3-medium custom-icon fa fa-user"></i> First Name</th>
+				<th><i class="w3-medium custom-icon fa fa-user"></i> Last Name</th>
+				<th><i class="w3-medium custom-icon fa fa-envelope-o"></i> Email</th>
+				<th><i class="w3-medium custom-icon fa fa-phone"></i> Phone</th>
+				<th><i class="w3-medium custom-icon fa fa-pencil"></i> Update</th>
+				<th><i class="w3-medium custom-icon fa fa-trash"></i> Delete</th>
+			</tr>
+			<tr *ngFor="let patient of patientListData | filter:filterData; index as i;" appHighlightPatient>
+				<td>{{i +1}}</td>
+				<td  [routerLink]="['detail', i]">{{patient.first_name}} </td>
+				<td  [routerLink]="['detail', i]">{{patient.last_name}}</td>
+				<td  [routerLink]="['detail', i]">{{patient.email}}</td>
+				<td  [routerLink]="['detail', i]">{{patient.phone | phone}}</td>
+				<td><button [routerLink]="['update', i]" class="w3-button w3-blue">Update</button></td>
+				<td><button (click)="deletePatient(i);" class="w3-button w3-red">Delete</button></td>
+			</tr>
+		</table>
+	</div>
+</div>
+

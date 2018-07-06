@@ -1,0 +1,28 @@
+
+<div class="login-page">
+	<form class="form-signin" [formGroup]="loginForm" (ngSubmit)="doLogin()">
+      <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
+      <label for="inputEmail" class="sr-only">Email address</label>
+      <input type="email" id="inputEmail" class="form-control" formControlName="email" placeholder="Email address" required autofocus>
+      <div class="w3-panel w3-red"  *ngIf="loginForm.controls.email.invalid && (loginForm.controls.email.dirty || loginForm.controls.email.touched)">Please enter valid email address</div> 
+      
+      <label for="inputPassword" class="sr-only">Password</label>
+      <input type="password" id="inputPassword" class="form-control" placeholder="Password" formControlName="password" required>
+      <div class="w3-panel w3-red"  *ngIf="loginForm.controls.password.invalid && (loginForm.controls.password.dirty || loginForm.controls.password.touched)">Password must be at least 6 characters long, and contain a number</div> 
+		<br>
+      <div class="checkbox mb-3">
+        <label>
+          <input type="checkbox" value="remember-me"> Remember me
+        </label>
+      </div>
+      
+      <button class="btn btn-lg btn-primary btn-block" type="submit"  [disabled]="!loginForm.valid">Sign in</button>
+      <p class="mt-5 mb-3 text-muted">&copy; 2018-2019</p>
+    </form>
+    
+	<div class="w3-panel w3-blue-gray">
+		<h4>Notes : </h4>
+		<p>Credentials : prem@prem.com &amp; admin123</p>
+		<p>All data will be restored when refreshed</p>
+	</div> 
+</div>
